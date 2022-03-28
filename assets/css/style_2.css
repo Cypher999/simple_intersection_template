@@ -1,0 +1,162 @@
+.observe{
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+.observe-top{
+  visibility: hidden;
+  opacity: 0;
+  margin-top:-100px;
+  transition: 1s;
+}
+.observe-show-top{
+  visibility: visible;
+  opacity: 1;
+  margin-top:0px;
+  transition: 1s;
+}
+
+.observe-left{
+  visibility: hidden;
+  opacity: 0;
+  margin-left:-100px;
+  transition: 1s;
+}
+.observe-show-left{
+  visibility: visible;
+  opacity: 1;
+  margin-left:0px;
+  transition: 1s;
+}
+
+.observe-right{
+  visibility: hidden;
+  opacity: 0;
+  margin-right:-100px;
+  transition: 1s;
+}
+.observe-show-right{
+  visibility: visible;
+  opacity: 1;
+  margin-right:0px;
+  transition: 1s;
+}
+
+.observe-bottom{
+  visibility: hidden;
+  opacity: 0;
+  margin-bottom:-100px;
+  transition: 1s;
+}
+.observe-show-bottom{
+  visibility: visible;
+  opacity: 1;
+  margin-bottom:0px;
+  transition: 1s;
+}
+
+
+  div.menu-container{
+    position: fixed;
+    z-index: 0;
+    height:0%;
+    display: block;
+    transition: 1s;
+    top:0;
+    position: fixed;
+  }
+  div.menu-container.active{
+    position: fixed;
+    z-index: 1;
+    top:20px;
+    height:100%;
+    display: block;
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+
+  div.menu .menu-head{
+    border-bottom:1px solid black;
+    padding:10px
+  }
+  div.menu .menu-body{
+    padding:10px;
+  }
+  div.menu-body ul{
+    list-style-type:none;
+  }
+  div.menu-body ul li{
+    padding:10px;
+    background: white;
+    transition: 1s;
+  }
+  div.menu-body ul li:hover{
+    padding:10px;
+    background: blue;
+    transition: 1s;
+  }
+  .main-body{
+    opacity: 1;
+    transition:1s;
+  }
+  .main-body.disable{
+    opacity: 0.1;
+    transition:1s;
+  }
+  .menu-close{
+    padding: 5px;
+    background: red;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .menu-close:hover{
+    padding: 5px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 1s;
+  }
+@media only screen and (max-width:600px){
+  .content .description .img-container{
+    margin-left:0%;
+  }
+  div.menu{
+    background:white;
+    position: absolute;
+    left:0px;
+  }
+}
+
+@media only screen and (min-width:600px){
+  .content .description .img-container{
+    margin-left:25%;
+  }
+  div.menu{
+    background:white;
+    position: absolute;
+    left:135px;
+  }
+}
+
+@media only screen and (min-width:900px){
+  .content .description .img-container{
+    margin-left:36%;
+  }
+  div.menu{
+    background:white;
+    position: absolute;
+    left:280px;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .content .description .img-container{
+    margin-left:35%;
+  }
+  div.menu{
+    background:white;
+    position: absolute;
+    left:350px;
+  }
+}
